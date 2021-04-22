@@ -2,13 +2,13 @@
   "name": "plugin",
   "version": "1.0.0",
   "private": true,
-  "workspaces": {
-    "nohoist": [
-      "**/ui-util/**"
-    ]
+  "installConfig": {
+    "hoistingLimits": "dependencies"
   },
+  "workspaces": [
+    "feed"
+  ],
   "dependencies": {
-      "shared-domain": "1.0.0",
-      "ui-util": "1.0.0"
+    "react": "16.9.0"
   }
 }

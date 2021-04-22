@@ -2,11 +2,8 @@
   "name": "mobile-client",
   "version": "1.0.0",
   "private": true,
-  "workspaces": {
-    "nohoist": [
-      "react-native",
-      "react-native/**"
-    ]
+  "installConfig": {
+    "hoistingLimits": "dependencies"
   },
   "dependencies": {
     "plugin": "1.0.0",

@@ -5,8 +5,23 @@
   "author": "mialso",
   "license": "MIT",
   "private": true,
-  "workspaces": {
-      "packages": ["web-client", "mobile-client", "ui-util", "shared-domain", "plugin", "board-plugin"],
-      "nohoist": ["**/web-client", "**/mobile-client", "**/ui-util", "**/shared-domain", "**/plugin", "**/board-plugin"]
+  "workspaces": [
+    "web-client",
+    "mobile-client",
+    "ui-util",
+    "shared-domain",
+    "plugin",
+    "board-plugin"
+  ],
+  "resolutions": {
+    "react": "16.9.0",
+    "typescript": "4.2.4"
+  },
+  "installConfig": {
+    "hoistingLimits": "dependencies"
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "typescript": "4.2.4"
   }
 }

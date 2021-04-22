@@ -2,14 +2,12 @@
   "name": "web-client",
   "version": "1.0.0",
   "private": true,
-  "workspaces": {
-    "nohoist": [
-      "**/ui-util/**"
-    ]
+  "installConfig": {
+    "hoistingLimits": "workspaces"
   },
   "dependencies": {
-      "board-plugin": "1.0.0",
-      "plugin": "1.0.0",
-      "ui-util": "1.0.0"
+    "board-plugin": "1.0.0",
+    "plugin": "1.0.0",
+    "ui-util": "1.0.0"
   }
 }

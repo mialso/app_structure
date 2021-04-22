@@ -2,7 +2,14 @@
   "name": "shared-domain",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "profile",
+    "account"
+  ],
+  "installConfig": {
+    "hoistingLimits": "dependencies"
+  },
   "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
-
