@@ -1,0 +1,14 @@
+{
+  "name": "plugin",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "nohoist": [
+      "**/ui-util/**"
+    ]
+  },
+  "dependencies": {
+      "shared-domain": "1.0.0",
+      "ui-util": "1.0.0"
+  }
+}

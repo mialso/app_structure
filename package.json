@@ -1,0 +1,12 @@
+{
+  "name": "app_structure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mialso",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+      "packages": ["web-client", "mobile-client", "ui-util", "shared-domain", "plugin", "board-plugin"],
+      "nohoist": ["**/web-client", "**/mobile-client", "**/ui-util", "**/shared-domain", "**/plugin", "**/board-plugin"]
+  }
+}
